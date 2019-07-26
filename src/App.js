@@ -16,6 +16,9 @@ class App extends Component {
     axios.get('/api/items').then( res => {
       this.setState({
         items: res.data
+        //res.data is on the front end with axios
+        //req is alwasy on the backend never front end ie req.body req.params means we have created a method for or ctrl
+        //res on back end all it does is sends itself all it has is a status and it sends itself back
         
       })
     }).catch(err => alert(err))
